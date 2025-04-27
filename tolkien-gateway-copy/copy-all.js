@@ -28,6 +28,6 @@ javascript: (function(){
         month = months[newmonth];
         day = 1;
     }else {day++};
-    navigator.clipboard.writeText(date+'\n'+sectionText+'\n\n');
+    navigator.clipboard.writeText(date+'\n'+sectionText);
     open(`https://tolkiengateway.net/wiki/${day.toString()}_${month}`, '_self');
 })()
